@@ -1,0 +1,30 @@
+body {
+  text-align: center;
+  background-color: #61889F;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+
+canvas {
+  background-color: lightskyblue;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid black;
+  color: black;
+}
+
+th,
+td {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.strzalki {
+  width: 30px;
+  height: 30px;
+  font-size: larger;
+  margin-top: 5px;
+
+}

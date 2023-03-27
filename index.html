@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prosta animacja</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <h1>Testowa animacja w canvas</h1>
+  <canvas id="animacja" width="500" height="500"></canvas>
+  <input class="strzalki" type="button" value="&uparrow;" id="up" onclick="up()"><br>
+  <input class="strzalki" type="button" value="&leftarrow;" id="left" onclick="left()">
+  <input class="strzalki" type="button" value="&middot;" id="stop" onclick="stop()">
+  <input class="strzalki" type="button" value="&rightarrow;" id="right" onclick="right()"><br>
+  <input class="strzalki" type="button" value="&downarrow;" id="down" onclick="down()"><br>
+
+  <table align="center">
+    <tr>
+      <th width="200px">Wielkość:</th>
+      <th width="200px">Szybkość:</th>
+    </tr>
+    <tr>
+      <td>
+        <input type="range" id="wielkosc" min="1" max="400" value="100" step="1" oninput="wielkoscPola()">
+        <span id="wyswietlWielkosc">100</span>
+      </td>
+      <td>
+        <input type="range" id="szybkosc" min="0" max="40" value="1" step="1" oninput="predkosc()"><span
+          id="wyswietlPredkosc">1</span>
+      </td>
+    </tr>
+  </table>
+
+  <input type="button" value="RESET" onclick="reset()"><br><br>
+  <table align="center">
+    <tr>
+      <th>Wybierz tło:</th>
+      <th>Wybierz kolor kwadratu:</th>
+    </tr>
+    <tr>
+      <td>
+        <input type="radio" name="kolorTla" id="bialy">białe<br>
+        <input type="radio" name="kolorTla" id="szare">jasno-szare<br>
+        <input type="radio" name="kolorTla" id="blekit">błękitne<br>
+      </td>
+      <td>
+        <input type="radio" name="kolorKwa" id="czarny">czarny<br>
+        <input type="radio" name="kolorKwa" id="zielony">zielony<br>
+        <input type="radio" name="kolorKwa" id="rozowy">różowy<br>
+      </td>
+    </tr>
+
+
+  </table>
+  <script src="js/animacja.js"></script>
+</body>
+
+</html>
